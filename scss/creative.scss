@@ -1,0 +1,57 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "contact.scss";
+@import "bootstrap-overrides.scss";
+
+.icon {
+  height: 1.5rem;
+}
+
+footer {
+  background: lighten($black, 8%);
+}
+
+#faq {
+  position: relative;
+  &:before {
+    content: "";
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image: url("https://c.wallhere.com/photos/ee/ab/honda_s2000_honda_rear_view_night-1003561.jpg!d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.review {
+  width: 40%;
+  display: inline-block;
+  &__photo {
+    max-width: 130px;
+    border-radius: 50%;
+    border: 3px solid $primary;
+  }
+  &__text {
+    i {
+      color: $primary;
+      top: -.3em;
+      margin-right: .5em;
+      position: relative;
+    }
+    &:before {
+      //content: '"';
+      color: $primary;
+      font-size: 2em;
+    }
+  }
+}
