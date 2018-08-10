@@ -428,3 +428,22 @@ footer {
   color: #F05F40;
   font-size: 2em;
 }
+
+.faq {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1em;
+}
+
+.faq .far {
+  font-size: 1.2em;
+  margin-right: .5em;
+}
+
+.faq__question {
+  position: relative;
+}
+
+.faq__question .fa-caret-down {
+  position: absolute;
+  right: 0;
+}

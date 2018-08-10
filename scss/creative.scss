@@ -55,3 +55,20 @@ footer {
     }
   }
 }
+
+.faq {
+  border-bottom: 1px solid rgba($white, .2);
+  margin-bottom: 1em;
+  .far {
+    font-size: 1.2em;
+    margin-right: .5em;
+  }
+
+  &__question {
+    position: relative;
+    .fa-caret-down {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
