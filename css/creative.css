@@ -82,9 +82,15 @@ img::-moz-selection {
   background: transparent;
 }
 
+.navbar-toggler {border:1px solid white !important;}
+
+.navbar-toggler-icon {
+background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E) !important;
+}
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
+  background-color: #343a40;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -107,7 +113,7 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: white;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
