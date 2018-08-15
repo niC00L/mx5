@@ -82,15 +82,9 @@ img::-moz-selection {
   background: transparent;
 }
 
-.navbar-toggler {border:1px solid white !important;}
-
-.navbar-toggler-icon {
-background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E) !important;
-}
-
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #343a40;
+  background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -113,7 +107,7 @@ background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  color: #212529;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -178,8 +172,19 @@ background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
+  background-color: #343a40;
+}
+
+header.masthead:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .75;
   background-image: url("../img/header.jpg");
-  background-position: center center;
+  background-position: center 75%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

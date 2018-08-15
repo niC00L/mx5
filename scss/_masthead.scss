@@ -2,9 +2,19 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
-  background-position: center center;
-  @include background-cover;
+  background-color: $gray-800;
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: .75;
+      background-image: url('../img/header.jpg');  
+      background-position: center 75%;
+      @include background-cover;
+  }
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
