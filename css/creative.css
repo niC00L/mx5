@@ -84,7 +84,7 @@ img::-moz-selection {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
+  background-color: #343a40;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -107,7 +107,7 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -124,6 +124,10 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
   background-color: transparent;
+}
+
+#mainNav .navbar-toggler {
+  border: none;
 }
 
 @media (min-width: 992px) {
@@ -173,6 +177,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-color: black;
+  height: 100vh;
 }
 
 header.masthead:before {
@@ -205,6 +210,31 @@ header.masthead .home-button a {
   border-radius: 50%;
   border: 2px solid white;
   color: white;
+}
+
+header.masthead .home-button a i {
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: -.2em;
+  }
+  20% {
+    top: 0;
+  }
+  30% {
+    top: -.2em;
+  }
+  40% {
+    top: 0;
+  }
 }
 
 header.masthead hr {
@@ -443,27 +473,48 @@ footer {
 }
 
 #faq:before {
-  opacity: 0.2;
+  content: "";
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  background-image: url("https://c.wallhere.com/photos/ee/ab/honda_s2000_honda_rear_view_night-1003561.jpg!d");
+  width: 48%;
+  background-color: #292d32;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .review {
-  width: 40%;
+  width: 70%;
   display: inline-block;
 }
 
 .review__photo {
+  position: relative;
   max-width: 130px;
   border-radius: 50%;
   border: 3px solid #e8c33c;
+  overflow: hidden;
+  margin: 0 auto 2rem auto;
+}
+
+.review__photo img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  min-width: 100%;
+  transform: translateX(-50%);
+}
+
+.review__photo:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .review__text i {
@@ -481,6 +532,7 @@ footer {
 .faq {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1em;
+  padding: 0 1rem;
 }
 
 .faq .far {

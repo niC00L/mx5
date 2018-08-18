@@ -36,7 +36,7 @@
 
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Vítr ve vlasech</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -287,7 +287,7 @@
     </div>
 </section>
 
-<section id="faq" class="bg-dark">
+<!-- <section id="faqN" class="bg-dark d-none">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -351,6 +351,144 @@
                     </div>
                 </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="faq" class="bg-dark">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                <h2 class="section-heading text-white text-center">Nejčastejší otázky</h2>
+                <hr class="my-4">
+                <div class="mt-5 mb-4 pt-4">
+                    <div class="faq">
+                        <p class="faq__question">
+                            <a data-toggle="collapse" href="#faq1" role="button"
+                               aria-expanded="false" aria-controls="faq1">
+                                <i class="far fa-question-circle"></i>
+                                <span class="text-white">
+                                Mužu s autem do zahraničí?
+                                </span>
+                                <i class="fas fa-caret-down text-white"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="faq1">
+                            <p>
+                                Ano, po předchozí domluvě.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <p class="faq__question">
+                            <a data-toggle="collapse" href="#faq2" role="button"
+                               aria-expanded="false" aria-controls="faq2">
+                                <i class="far fa-question-circle"></i>
+                                <span class="text-white">
+                                    Muže řídit více řidiču?
+                                </span>
+                                <i class="fas fa-caret-down text-white"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="faq2">
+                            <p>
+                                Ano, musí ale být uvedeni v nájemní smlouve.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <p class="faq__question">
+                            <a data-toggle="collapse" href="#faq3" role="button"
+                               aria-expanded="false" aria-controls="faq3">
+                                <i class="far fa-question-circle"></i>
+                                <span class="text-white">
+                                Je v ceně zahrnuté palivo?
+                                </span>
+                                <i class="fas fa-caret-down text-white"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="faq3">
+                            <p>
+                                Ne. Auto dostávate a vracíte s plnou nádrží.
+                            </p>
+                        </div>
+                    </div>   
+                    <div class="faq">
+                        <p class="faq__question">
+                            <a data-toggle="collapse" href="#faq4" role="button"
+                               aria-expanded="false" aria-controls="faq4">
+                                <i class="far fa-question-circle"></i>
+                                <span class="text-white">
+                                Je Mustang lepší?
+                                </span>
+                                <i class="fas fa-caret-down text-white"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="faq4">
+                            <p>
+                                NE!
+                            </p>
+                        </div>
+                    </div>          
+                </div>                
+                <p class="text-center"><a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Všechny otázky</a></p>
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-heading text-white text-center">Tipy na výlet</h2>
+                <hr class="my-4">
+                <div id="reviewsCarousel" class="carousel text-center slide mt-5 mb-4" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="review text-center">
+                                <div class="review__photo">
+                                    <img src="http://bmwz4.cz/Images/TipyNaVylet/TipyNaVylet1.jpg"
+                                         alt="Gregor"/>
+                                 </div>
+                                <h4 class="font-weight-bold">Zámek Slavkov</h4>
+                                <p class="review__text font-italic">
+                                    <i class="fas fa-quote-right"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review text-center">
+                                <div class="review__photo">
+                                    <img src="http://bmwz4.cz/Images/TipyNaVylet/TipyNaVylet2.jpg"
+                                         alt="Mohyla míru"/>
+                                 </div>
+                                <h4 class="font-weight-bold">Mohyla míru</h4>
+                                <p class="review__text font-italic">
+                                    <i class="fas fa-quote-right"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review text-center">
+                                <div class="review__photo">
+                                    <img src="http://bmwz4.cz/Images/TipyNaVylet/TipyNaVylet4.jpg"
+                                         alt="Vyškov"/>
+                                 </div>
+                                <h4 class="font-weight-bold">Vyškov</h4>
+                                <p class="review__text font-italic">
+                                    <i class="fas fa-quote-right"></i>
+                                    Lorem ipsum dolor sit amet. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <p class="text-center"><a class="btn btn-primary btn-xl js-scroll-trigger" href="#">Všechny výlety</a></p>
             </div>
         </div>
     </div>
@@ -462,13 +600,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-2 ml-auto text-center">
+            <div class="col-sm-4 col-md-3 col-lg-2 ml-auto text-center">
                 <i class="fa fa-phone fa-2x mb-3 sr-contact"></i>
                 <p>
                     <a href="tel:+420605226260">+420 605 226 260</a>
                 </p>
             </div>
-            <div class="col-lg-2 mr-auto text-center">
+            <div class="col-sm-4 col-md-3 col-lg-2 mr-auto text-center">
                 <i class="far fa-envelope fa-2x mb-3 sr-contact"></i>
                 <p>
                     <a href="mailto:get@miata.com">get@miata.com</a>
