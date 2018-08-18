@@ -6,6 +6,7 @@
 @import "services.scss";
 @import "portfolio.scss";
 @import "contact.scss";
+@import "_modal.scss";
 @import "bootstrap-overrides.scss";
 
 .icon {
@@ -59,7 +60,7 @@ position: relative;
 }
 
 .review {
-  width: 70%;
+  width: 80%;
   display: inline-block;
   &__photo {
     position: relative;

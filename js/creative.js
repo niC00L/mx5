@@ -71,5 +71,8 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+$('.modal__close').click(function(){
+  $('.article-modal').removeClass('modal--visible');
+})
 
 })(jQuery); // End of use strict
