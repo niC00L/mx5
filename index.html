@@ -33,6 +33,8 @@
 
 <body id="page-top">
 
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
@@ -56,7 +58,7 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#prices">Ceník</a>
                 </li>
-                <li class="nav-item d-none">
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
                 </li>
                 <li class="nav-item d-none">
@@ -76,9 +78,9 @@
 <header class="masthead text-left text-white d-flex">
     <div class="container my-auto">
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 <h1 class="text-uppercase">
-                    <strong>Zážitek z jízdy kabrioletem</strong>
+                    <strong>Zažite jízdu kabrioletem</strong>
                 </h1>
                 <hr style="margin-left: 0">
             </div>
@@ -87,7 +89,11 @@
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Zamluvte si jízdu</a>
             </div>
         </div>
-        <!-- <a class="js-scroll-trigger btn btn-outline-secondary" href="#about"> V </a> -->
+    </div>
+    <div class="text-center home-button">
+        <a href="#about" class="js-scroll-trigger ">
+            <i class="fa fa-chevron-down"></i>
+        </a>
     </div>
 </header>
 
@@ -99,8 +105,8 @@
                 <hr class="light my-4">
                 <p class="text-faded mb-4">
                     Zábavné auto se srdcem a duší, které umí vyukouzlit úsměv a udělat radost. Protože každá sdílená
-radost je několika násobná radost, dáváme k dispozici sportovní kabriolet, který Vás bude bavit,a
-který z Vaší jízdy, nebo výletu udělá nevšední zážitek
+                    radost je několika násobná radost, dáváme k dispozici sportovní kabriolet, který Vás bude bavit,a
+                    který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                 </p>
                 <a class="btn btn-light btn-xl js-scroll-trigger" href="#">Náš příběh</a>
             </div>
@@ -121,14 +127,14 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
         <div class="row">
             <div class="col-lg-4 col-md-4 text-center">
                 <div class="service-box mt-5 mx-auto">
-                    <i class="fa fa-4x fa-gem text-primary mb-3 sr-icons"></i>
+                    <i class="fa fa-4x fa-car text-primary mb-3 sr-icons"></i>
                     <h3 class="mb-3">Výlety</h3>
                     <p class="text-muted mb-0">Udělejte si radost letními výlety bez střechy</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 text-center">
                 <div class="service-box mt-5 mx-auto">
-                    <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+                    <i class="fa fa-4x fa-chalkboard-teacher text-primary mb-3 sr-icons"></i>
                     <h3 class="mb-3">Jízda s instruktorem</h3>
                     <p class="text-muted mb-0">Nebo si dopřejte ostřejší sportovní jízdu.</p>
                 </div>
@@ -145,6 +151,26 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
 </section>
 
 <section id="aboutCar" class="bg-dark">
+    <div class="image"> 
+        <img src="/img/about.jpg" alt="miata"/>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-6 text-white pt-4 pl-5">
+                <div class="pl-4">
+                    <h2 class="section-heading text-white">Jaké auto pujčujeme?</h2>
+                    <hr style="margin-left: 0" class="my-4">
+                    <p class="mb-4">
+                        Naše Mazda MX5 je limitovaná verze Sportive s motorem o objemu 1.8L a výkonem 146 koní. Prošla faceliftem a na rozdíl od seriové MX5 je posazena na Bilstein podvozku. Má samosvor Torsen a 6ti stupňovou převodovku. Výlet Vám mohou zpříjemnit vyhřívaná sedadla, el.stahování oken, nebo klimatizace.
+                    </p>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger">Více informací</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="aboutCar" class="bg-dark d-none">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -199,16 +225,15 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
         </div>
     </div>
     <div class="container">
-        <div class="row justify-content-around mb-4">
-            <div class="col-md-3">
-                <h3>Zapujčení vozidla</h3>
-                <div class="row mb-2">
+        <div class="row justify-content-center mb-4 no-gutters">
+            <div class="col-md-4 prices-table">
+                <h4 class="text-center text-primary">Zapujčení vozidla</h4>
+                <div class="row px-5 mb-2">
                     <div class="col-6 font-weight-bold">
                         4 hodiny <br>
                         1 den <br>
                         2 dny <br>
-                        víkend <br>
-                        ...
+                        víkend <br>                        
                     </div>
                     <div class="col-6 text-right">
                         1200 kč <br>
@@ -218,9 +243,9 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h3>Jízda s instruktorem</h3>
-                <div class="row mb-2">
+            <div class="col-md-4 prices-table">
+                <h4 class="text-center text-primary">Jízda s instruktorem</h4>
+                <div class="row px-5 mb-2">
                     <div class="col-6 font-weight-bold">
                         30 minut <br>
                         1 hodina <br>
@@ -234,9 +259,9 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h3>Svatba</h3>
-                <div class="row mb-2">
+            <div class="col-md-4 prices-table">
+                <h4 class="text-center text-primary">Svatba</h4>
+                <div class="row mb-2 px-5">
                     <div class="col-6 font-weight-bold">
                         1 hodina <br>
                         2 hodiny <br>
@@ -250,19 +275,23 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
+    </div>
+    <div class="container" style="position: relative;">
         <div class="text-center">
-            <p><a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Zamluvte si jízdu</a></p>
-            <a href="#">Podmínky pujčení</a>
+            <p class="mb-4">
+                Pred pujčením se platí vratná kauce v hodnotě 10 000 kč. V ceně je zahrnuté pojištění. Více informací naleznete v <a href="#">podmínkach pujčení</a>.
+            </p>
+            <p><a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Zamluvte si jízdu</a></p>            
         </div>
     </div>
 </section>
 
-<section id="faq" class="bg-dark d-none">
+<section id="faq" class="bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-white">Frequently asked questions</h2>
+                <h2 class="section-heading text-white">Nejčastejší otázky</h2>
                 <hr class="my-4">
             </div>
         </div>
@@ -276,17 +305,14 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                            aria-expanded="false" aria-controls="faq1">
                             <i class="far fa-question-circle"></i>
                             <span class="text-white">
-                            Lorem ipsum dolor sit amet?
+                            Mužu s autem do zahraničí?
                             </span>
                             <i class="fas fa-caret-down text-white"></i>
                         </a>
                     </p>
                     <div class="collapse" id="faq1">
                         <p>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid.
-                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                            proident.
+                            Ano, po předchozí domluvě.
                         </p>
                     </div>
                 </div>
@@ -296,17 +322,14 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                            aria-expanded="false" aria-controls="faq2">
                             <i class="far fa-question-circle"></i>
                             <span class="text-white">
-                                Something about renting a car?
+                                Muže řídit více řidiču?
                             </span>
                             <i class="fas fa-caret-down text-white"></i>
                         </a>
                     </p>
                     <div class="collapse" id="faq2">
                         <p>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid.
-                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                            proident.
+                            Ano, musí ale být uvedeni v nájemní smlouve.
                         </p>
                     </div>
                 </div>
@@ -316,36 +339,17 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
                            aria-expanded="false" aria-controls="faq3">
                             <i class="far fa-question-circle"></i>
                             <span class="text-white">
-                            Is mustang better?
+                            Je Mustang lepší?
                             </span>
                             <i class="fas fa-caret-down text-white"></i>
                         </a>
                     </p>
                     <div class="collapse" id="faq3">
                         <p>
-                            NO!
+                            NE!
                         </p>
                     </div>
                 </div>
-                <div class="faq">
-                    <p class="faq__question">
-                        <a data-toggle="collapse" href="#faq4" role="button"
-                           aria-expanded="false" aria-controls="faq4">
-                            <i class="far fa-question-circle"></i>
-                            <span class="text-white">
-                            Lorem ipsum dolor sit amet?
-                            </span>
-                            <i class="fas fa-caret-down text-white"></i>
-                        </a>
-                    </p>
-                    <div class="collapse" id="faq4">
-                        <p>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid.
-                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                            proident.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -451,23 +455,21 @@ který z Vaší jízdy, nebo výletu udělá nevšední zážitek
 
 
 <section id="contact">
-    <div class="container">
+    <div class="container my-auto">
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading">Kontaktujte nás!</h2>
-                <hr class="my-4">
-                <p class="mb-5">Neváhejte nás kontaktovat. Radi si s Vámi promluvíme osobně.</p>
+            <div class="col-lg-8 mx-auto text-center mb-4">
+                <h1 class="section-heading">Zamluvte si jízdu!</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 ml-auto text-center">
-                <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <div class="col-lg-2 ml-auto text-center">
+                <i class="fa fa-phone fa-2x mb-3 sr-contact"></i>
                 <p>
                     <a href="tel:+420605226260">+420 605 226 260</a>
                 </p>
             </div>
-            <div class="col-lg-4 mr-auto text-center">
-                <i class="far fa-envelope fa-3x mb-3 sr-contact"></i>
+            <div class="col-lg-2 mr-auto text-center">
+                <i class="far fa-envelope fa-2x mb-3 sr-contact"></i>
                 <p>
                     <a href="mailto:get@miata.com">get@miata.com</a>
                 </p>

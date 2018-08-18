@@ -2,7 +2,7 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-color: $gray-800;
+  background-color: black;
   &:before {
       content: "";
       position: absolute;
@@ -15,6 +15,23 @@ header.masthead {
       background-position: center 75%;
       @include background-cover;
   }
+
+  .home-button {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+
+    a {
+    display: inline-block;
+    line-height: 2.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: 2px solid white;   
+      color: white;
+    }
+  }
+
   hr {
     margin-top: 30px;
     margin-bottom: 30px;

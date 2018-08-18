@@ -5,6 +5,7 @@
   max-width: 650px;
   margin: 0 auto;
   background: $primary;
+  overflow: hidden;
   .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -38,11 +39,12 @@
     }
   }
   img {
+    transform: scale(1);
     @include transition-all;
   }
   &:hover {
     img {
-      opacity: .5;
+      transform: scale(1.1);
     }
   }
   &:focus {

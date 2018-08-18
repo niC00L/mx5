@@ -41,7 +41,7 @@ h6 {
 }
 
 .bg-dark {
-  background-color: $gray-900 !important;
+  background-color: darken($gray-800, 2%) !important;
 }
 
 .text-faded {
@@ -49,7 +49,7 @@ h6 {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: $gray-800;
   color: white;
 }

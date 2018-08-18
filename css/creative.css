@@ -11,7 +11,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: #e8c33c;
 }
 
 hr.light {
@@ -19,14 +19,14 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: #e8c33c;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #e8c33c;
 }
 
 h1,
@@ -39,11 +39,11 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #e8c33c !important;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #2f353a !important;
 }
 
 .text-faded {
@@ -51,7 +51,7 @@ h6 {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: #343a40;
   color: white;
 }
@@ -94,12 +94,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
+  color: #e8c33c;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: #e8c33c;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -112,12 +112,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
+  color: #e8c33c;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  color: #e8c33c !important;
   background-color: transparent;
 }
 
@@ -154,10 +154,10 @@ img::-moz-selection {
     box-shadow: 0 5px 5px rgba(33, 37, 41, 0.5);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+    color: #e8c33c;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
+    color: #e8c33c;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -165,14 +165,14 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    color: #e8c33c;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-color: #343a40;
+  background-color: black;
 }
 
 header.masthead:before {
@@ -189,6 +189,22 @@ header.masthead:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+header.masthead .home-button {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+header.masthead .home-button a {
+  display: inline-block;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
 }
 
 header.masthead hr {
@@ -237,7 +253,8 @@ header.masthead p {
   display: block;
   max-width: 650px;
   margin: 0 auto;
-  background: #F05F40;
+  background: #e8c33c;
+  overflow: hidden;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -249,7 +266,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(232, 195, 60, 0.9);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -280,13 +297,14 @@ header.masthead p {
 }
 
 .portfolio-box img {
+  transform: scale(1);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .portfolio-box:hover img {
-  opacity: .5;
+  transform: scale(1.1);
 }
 
 .portfolio-box:focus {
@@ -303,10 +321,11 @@ header.masthead p {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-color: #343a40;
+  background-image: url("../img/bg-dark.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  padding: 7rem 0;
 }
 
 section#contact .section-heading {
@@ -331,7 +350,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #F05F40;
+  border-color: #e8c33c;
   box-shadow: none;
 }
 
@@ -362,7 +381,7 @@ section#contact :-ms-input-placeholder {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  color: #e8c33c !important;
 }
 
 .btn {
@@ -378,13 +397,13 @@ section#contact :-ms-input-placeholder {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #e8c33c;
+  border-color: #e8c33c;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #e5bc25 !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -396,7 +415,27 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
-  background: #141414;
+  background: #e8c33c;
+}
+
+#about {
+  background-image: url(../img/bg-yellow.jpg);
+}
+
+#aboutCar {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#aboutCar .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #faq {
@@ -404,7 +443,6 @@ footer {
 }
 
 #faq:before {
-  content: "";
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -425,18 +463,18 @@ footer {
 .review__photo {
   max-width: 130px;
   border-radius: 50%;
-  border: 3px solid #F05F40;
+  border: 3px solid #e8c33c;
 }
 
 .review__text i {
-  color: #F05F40;
+  color: #e8c33c;
   top: -.3em;
   margin-right: .5em;
   position: relative;
 }
 
 .review__text:before {
-  color: #F05F40;
+  color: #e8c33c;
   font-size: 2em;
 }
 
@@ -457,4 +495,34 @@ footer {
 .faq__question .fa-caret-down {
   position: absolute;
   right: 0;
+}
+
+#prices {
+  background-color: black;
+  position: relative;
+}
+
+#prices:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .25;
+  background-image: url("../img/prices.jpg");
+  background-position: center 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.prices-table {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem !important;
+}
+
+.prices-table h4 {
+  margin-bottom: 2rem;
 }

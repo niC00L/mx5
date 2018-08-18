@@ -13,13 +13,36 @@
 }
 
 footer {
-  background: lighten($black, 8%);
+  //background: darken($gray-800, 5%);
+  background: $primary;
+}
+
+#about {
+  background-image: url(../img/bg-yellow.jpg);
+}
+
+#aboutCar {
+position: relative;
+  //background-image: url(../img/bg.jpg);
+  //background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 #faq {
   position: relative;
   &:before {
-    content: "";
+    //content: "";
     opacity: 0.2;
     top: 0;
     left: 0;
@@ -71,4 +94,28 @@ footer {
       right: 0;
     }
   }
+}
+
+#prices {
+background-color: black;
+position: relative;
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: .25;
+      background-image: url('../img/prices.jpg');  
+      background-position: center 75%;
+      @include background-cover;
+  }
+}
+
+.prices-table {
+  border: 1px solid rgba(white, .1);
+  padding: 3rem !important;
+
+  h4 {margin-bottom: 2rem;}
 }
