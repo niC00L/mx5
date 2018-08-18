@@ -445,6 +445,7 @@ section#contact :-ms-input-placeholder {
   color: #fff;
   position: absolute;
   top: .75em;
+  z-index: 999;
   right: .75em;
   font-size: 2rem;
   width: 1em;

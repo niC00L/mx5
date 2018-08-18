@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var include = require('gulp-include');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -96,7 +97,8 @@ gulp.task('js:minify', function() {
       './js/*.js',
       '!./js/*.min.js'
     ])
-    .pipe(uglify())
+    .pipe(include())
+    // .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))

@@ -28,10 +28,11 @@
     "dependencies": {
         "bootstrap": "4.1.1",
         "font-awesome": "4.7.0",
+        "gulp-include": "^2.3.1",
         "jquery": "3.3.1",
+        "jquery-parallax.js": "^1.5.0",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
-        "scroll-parallax": "^2.1.0",
         "scrollreveal": "3.4.0"
     },
     "devDependencies": {
