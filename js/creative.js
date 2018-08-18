@@ -73,6 +73,7 @@
   });
 $('.modal__close').click(function(){
   $('.article-modal').removeClass('modal--visible');
+  $('body').removeClass('no-scroll');
 })
 
 })(jQuery); // End of use strict

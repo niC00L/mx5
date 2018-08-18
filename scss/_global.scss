@@ -41,7 +41,7 @@ h6 {
 }
 
 .bg-dark {
-  background-color: darken($gray-800, 2%) !important;
+  background-color: darken($gray-800, 5%) !important;
 }
 
 .text-faded {
@@ -52,6 +52,10 @@ section {
   padding: 6rem 0;
   background: $gray-800;
   color: white;
+
+  @media (max-width: 767px) {
+    padding: 4rem 0;
+  }
 }
 
 .section-heading {

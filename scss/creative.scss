@@ -13,6 +13,8 @@
   height: 1.5rem;
 }
 
+body.no-scroll {overflow:hidden;}
+
 footer {
   //background: darken($gray-800, 5%);
   background: $primary;
@@ -36,8 +38,24 @@ position: relative;
     left: 0;
     width: 50%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden;    
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }    
   }
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+      .image {
+        position: relative;
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 3rem;
+      }
+    }
 }
 
 #faq {
@@ -56,6 +74,16 @@ position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  @media (max-width: 767px) {
+    &:before {content: none;}
+    padding-top: 0;
+
+    .col-faq {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      background-color: darken($gray-800, 5%);
+    }
   }
 }
 
@@ -138,6 +166,10 @@ position: relative;
 .prices-table {
   border: 1px solid rgba(white, .1);
   padding: 3rem !important;
+
+  @media (max-width: 767px) {
+    padding: 2.5rem 1rem !important;
+  }
 
   h4 {margin-bottom: 2rem;}
 }
