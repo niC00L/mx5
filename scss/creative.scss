@@ -173,3 +173,17 @@ position: relative;
 
   h4 {margin-bottom: 2rem;}
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: auto;
+  z-index: 999;
+  text-align: center; 
+  transform: scale(0);
+  a {background-color: rgba(black, .5);}
+  a i {animation-name: none;}
+
+  &.visible {transform: scale(1);}
+}

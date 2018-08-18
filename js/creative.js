@@ -15,6 +15,20 @@
     }
   });
 
+if ($(window).scrollTop() >= $('#home').height()) {
+      $('.back-to-top').addClass('visible');
+    } else {
+      $('.back-to-top').removeClass('visible');
+    }
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= $('#home').height()) {
+      $('.back-to-top').addClass('visible');
+    } else {
+      $('.back-to-top').removeClass('visible');
+    }
+  })
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');

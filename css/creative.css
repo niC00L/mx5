@@ -179,6 +179,29 @@ img::-moz-selection {
   }
 }
 
+.home-button {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.home-button a {
+  display: inline-block;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+}
+
+.home-button a i {
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
@@ -200,29 +223,6 @@ header.masthead:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-header.masthead .home-button {
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-}
-
-header.masthead .home-button a {
-  display: inline-block;
-  line-height: 2.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border: 2px solid white;
-  color: white;
-}
-
-header.masthead .home-button a i {
-  position: relative;
-  animation-name: bounce;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
@@ -685,4 +685,26 @@ footer {
 
 .prices-table h4 {
   margin-bottom: 2rem;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: auto;
+  z-index: 999;
+  text-align: center;
+  transform: scale(0);
+}
+
+.back-to-top a {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.back-to-top a i {
+  animation-name: none;
+}
+
+.back-to-top.visible {
+  transform: scale(1);
 }
