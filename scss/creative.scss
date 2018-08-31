@@ -13,6 +13,13 @@
   height: 1.5rem;
 }
 
+#pricess {
+@media (min-width: 992px) {
+padding: 8rem 0;
+}
+background: #2b2c2e;
+}
+
 body.no-scroll {overflow:hidden;}
 
 footer {
@@ -35,6 +42,7 @@ position: relative;
   .image {
     position: absolute;
     top: 0;
+
     left: 0;
     width: 50%;
     height: 100%;
@@ -163,11 +171,12 @@ position: relative;
   }
 }
 
+
 .prices-table {
   border: 1px solid rgba(white, .1);
   padding: 3rem !important;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1200px) {
     padding: 2.5rem 1rem !important;
   }
 

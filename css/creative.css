@@ -203,6 +203,7 @@ img::-moz-selection {
 }
 
 header.masthead {
+  position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-color: black;
@@ -223,6 +224,62 @@ header.masthead:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+header.masthead.part {
+  height: auto;
+  background-color: #2b2c2e;
+}
+
+header.masthead.part:before {
+  background-image: none;
+  opacity: 0;
+}
+
+header.masthead.part .bg-miata {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+}
+
+header.masthead.part .bg-miata img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 991px) {
+  header.masthead.part .bg-miata {
+    position: relative;
+  }
+}
+
+header.masthead.part .text {
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+header.masthead.part .text hr {
+  margin-left: auto !important;
+}
+
+@media (min-width: 992px) {
+  header.masthead.part .text {
+    padding-top: 10rem;
+    padding-bottom: 18rem;
+    text-align: left;
+  }
+  header.masthead.part .text hr {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  header.masthead {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+  }
 }
 
 @keyframes bounce {
@@ -361,7 +418,14 @@ section#contact {
   background-image: url("../img/bg-dark.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 7rem 0;
+}
+
+@media (min-width: 992px) {
+  section#contact.very-big {
+    padding: 13rem 0;
+  }
 }
 
 section#contact .section-heading {
@@ -508,6 +572,16 @@ section#contact :-ms-input-placeholder {
 
 .icon {
   height: 1.5rem;
+}
+
+#pricess {
+  background: #2b2c2e;
+}
+
+@media (min-width: 992px) {
+  #pricess {
+    padding: 8rem 0;
+  }
 }
 
 body.no-scroll {
@@ -677,7 +751,7 @@ footer {
   padding: 3rem !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .prices-table {
     padding: 2.5rem 1rem !important;
   }

@@ -5,7 +5,11 @@ section#contact {
   background-image: url('../img/bg-dark.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 7rem 0;
+  @media(min-width: 992px) {
+  &.very-big{padding: 13rem 0;}
+  }
   .section-heading {
     color: $white;
   }
