@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-xs navbar-light" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <img class="logo" src="img/logo.svg" alt="Logo" />
+        </a> 
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger @@if (active === 'index') {active}" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger @@if (active === 'services') {active}" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger @@if (active === 'pries') {active}" href="prices.html">Prices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger @@if (active === 'rent') {active}" href="rent.html">Rent</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
