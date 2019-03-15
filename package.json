@@ -8,6 +8,8 @@
     "gulp": "node node_modules/gulp/bin/gulp.js"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap.native": "^2.0.25",
     "npm": "^6.4.0"
   },
   "devDependencies": {

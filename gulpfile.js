@@ -15,12 +15,13 @@ var docsCss = './docs/css';
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function () {
 
-    // Bootstrap
-    /*    gulp.src([
-            './node_modules/bootstrap/docs/js/bootstrap.min.js'
-        ])
-            .pipe(gulp.dest(docsJs));
-    */
+    // Bootstrap native
+    gulp.src([
+        './node_modules/bootstrap.native/dist/bootstrap-native-v4.min.js',
+        './node_modules/bootstrap.native/dist/bootstrap-native-v4.min.js'
+    ])
+        .pipe(gulp.dest(docsJs));
+
 });
 
 
