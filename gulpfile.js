@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var include = require('gulp-include');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
@@ -8,6 +7,7 @@ var csso = require("gulp-csso");
 var gutil = require("gulp-util");
 var browserSync = require('browser-sync').create();
 var fileinclude = require('gulp-file-include');
+var include = require('gulp-include');
 
 var docsJs = './docs/js';
 var docsCss = './docs/css';
@@ -16,11 +16,12 @@ var docsCss = './docs/css';
 gulp.task('vendor', function () {
 
     // Bootstrap
-/*    gulp.src([
-        './node_modules/bootstrap/docs/js/bootstrap.min.js'
-    ])
-        .pipe(gulp.dest(docsJs));
-*/
+    /*    gulp.src([
+            './node_modules/bootstrap/docs/js/bootstrap.min.js'
+        ])
+            .pipe(gulp.dest(docsJs));
+    */
+});
 
 
 // Compile CSS
