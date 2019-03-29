@@ -1,7 +1,11 @@
-$('#mainNav').on('show.bs.collapse', function () {
-    $('#mainNav').addClass('open');
-});
+var mainNav = document.getElementById('mainNav');
+var navbarNav = document.getElementById('navbarResponsive');
 
-$('#mainNav').on('hide.bs.collapse', function () {
-    $('#mainNav').removeClass('open');
-});
+navbarNav .addEventListener('show.bs.collapse', function (event) {
+   mainNav.classList.add('open');
+   console.log('item');
+}, false);
+
+navbarNav .addEventListener('hide.bs.collapse', function (event) {
+    mainNav.classList.remove('open');
+}, false);
