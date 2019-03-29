@@ -52,10 +52,20 @@
   background: linear-gradient($direction, $color-stops);
 }
 
-
+@mixin gradient-red($direction: 75deg) {
+  @include linear-gradient($direction, rgba(239,71,58,1), rgba(203,45,62,1));
+}
+@mixin gradient-green($direction: 75deg) {
+  @include linear-gradient($direction, rgba(93,224,142,1), rgba(23,179,166,1));
+}
+@mixin gradient-purple($direction: 75deg) {
+  @include linear-gradient($direction, rgba(174,131,219,1), rgba(145,74,195,1));
+}
 
 
 $white: white;
-$body-bg-color: rgba(225,225,225,0.25);
+$body-bg-color: rgb(248,248,248);
 $primary: rgba(235,68,58,1);
+$dark: rgba(37,55,78,1);
 $font-family-base: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$border-radius: 1.5rem;

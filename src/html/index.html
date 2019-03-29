@@ -9,9 +9,136 @@
 @@include('components/navbar.html', {
 "active": "home"
 })
-<div class="container content">
-    Home
+<div class="header header--main">
+    <div class="container">
+        <div class="row">
+            <div class="header__text col-4">
+                <h1 class="header__title">
+                    Zažijte jízdu kabrioletem
+                </h1>
+                <p class="header__description">
+                    Mít vítr ve vlasech, cítit vůni krajiny,
+                    vidět nebe nad hlavou...
+                </p>
+                <a href="#contact" class="btn btn-primary">
+                    Zamluvte si jízdu
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="container content">
+    <section class="homepage--about row justify-content-center mb-5 pb-5">
+        <div class="text-center col-6">
+            <h2 class="heading-underline heading-underline--center">Co nabízime</h2>
+            <p>
+                Protože každá sdílená radost je několika násobná radost, dáváme k dispozici sportovní kabriolet, který
+                Vás bude bavit,a který z Vaší jízdy, nebo výletu udělá nevšední zážitek. Chce to nejake keywords ako
+                pujcovna a mx5 a Brno. Cim viac krat sa to bude vyskytovat na stranke tym silnejsie keyword to je a
+                lepsie sa indexuje stranka vo vyhladavacoch. Ponukame vam tieto veci...
+            </p>
+        </div>
+    </section>
+    <section class="homepage--services mb-5 pb-5">
+        <div class="row row justify-content-between mb-4">
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card__header card__header--green">
+                        <i class="material-icons">person</i>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">
+                            výlety
+                        </h3>
+                        <p class="card__text">
+                            Udělejte si radost letními výlety bez střechy
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card__header card__header--red">
+                        <i class="material-icons">person</i>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">
+                            jízda s instruktorem
+                        </h3>
+                        <p class="card__text">
+                            nebo si dopřejte ostřejší sportovní jízdu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card__header card__header--purple">
+                        <i class="material-icons">person</i>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">
+                            svatba
+                        </h3>
+                        <p class="card__text">
+                            Na svatbě Vám to bude nejvíce slušet v autě bez střechy
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class=" col-3">
+                <a href="#contact" class="btn btn-primary d-block">
+                    Vice informaci
+                </a>
+            </div>
+            <div class=" col-3">
+                <a href="#contact" class="btn btn-primary d-block">
+                    Cenik
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="homepage--about-car">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="heading-underline heading-underline--left">O autě</h2>
+                <p>
+                    Naše Mazda MX5 je limitovaná verze Sportive, prošla faceliftem a na rozdíl od seriové MX5 je
+                    posazena na Bilstein podvozku, má samosvor Torsen a 6ti stupňovou převodovku. Výlet Vám mohou
+                    zpříjemnit vyhřívaná sedadla, el.stahování oken, nebo klimatizace. Díky své nízké hmotnosti je
+                    super....
+                </p>
+                <a href="#contact" class="btn btn-primary">
+                    Zamluvte si jízdu
+                </a>
+            </div>
+            <div class="col-auto">
+                <div class="row specs-list">
+                    <div class="col spec spec--power">
+                        <div class="spec__value d-inline-block">146</div>
+                        <div class="spec__units">koní</div>
+                        <div class="spec__name">výkon</div>
+                    </div>
+                    <div class="col spec spec--speed">
+                        <div class="spec__value d-inline-block">208</div>
+                        <div class="spec__units">km/h</div>
+                        <div class="spec__name">rýchlosť</div>
+                    </div>
+                    <div class="col spec spec--weight">
+                        <div class="spec__value d-inline-block">1065</div>
+                        <div class="spec__units">kg</div>
+                        <div class="spec__name">hmotnosť</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
 
 @@include('components/footer.html')
 <script src="/js/script.min.js"></script>

@@ -1,10 +1,8 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $white;
   //@include sans-serif-font;
-  //@include transition-all;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  background-color: $body-bg-color;
+  transition: .25s;
 
   .navbar-brand {position: relative;}
 
@@ -13,16 +11,12 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    height: 200%;
   }
-  .logo--white {opacity: 0;}
 
   &.open {
     background-color: $primary;
-
-    .logo--black {opacity: 0;}
-    //@include media-breakpoint-up(lg) {
-    //  .logo--white {opacity: 1;}
-    //}
+    //@include gradient-red();
 
     .navbar-toggler {
       color: $white;
@@ -44,16 +38,16 @@
     padding-right: 3rem;
     height: calc(100vh - 2rem - 38px);
     justify-content: center;
-    //@include media-breakpoint-up(lg) {
-    //  height: calc(100vh - 7rem - 24px);
-    //  text-align: right;
-    //  justify-content: flex-end;
-    //  padding-bottom: 6.5rem;
-    //}
-    //@include media-breakpoint-up(xl) {
-    //  padding-left: 16.25rem;
-    //  padding-right: 16.25rem;
-    //}
+    @include media-breakpoint-up(lg) {
+      height: calc(100vh - 7rem - 24px);
+      text-align: right;
+      justify-content: flex-end;
+      padding-bottom: 6.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-left: 16.25rem;
+      padding-right: 16.25rem;
+    }
 
     > li.nav-item {
       > a.nav-link,
@@ -65,20 +59,20 @@
         padding-top: 0;
         padding-bottom: 0;
         &:hover {
-          color: $primary;
+          color: $dark;
         }
         &.active {
-          color: $primary !important;
+          color: $dark !important;
           background-color: transparent;
           &:hover {
             background-color: transparent;
           }
         }
 
-        //@include media-breakpoint-up(xl) {
-        //  font-size: 3.75rem;
-        //  line-height: 1.33;
-        //}
+        @include media-breakpoint-up(xl) {
+          font-size: 3.75rem;
+          line-height: 1.33;
+        }
       }
     }
   }
@@ -86,9 +80,9 @@
     border: none;
     //color: $black;
   }
-  //@include media-breakpoint-up(lg) {
-  //  padding: 3.5rem 0;
-  //}
+  @include media-breakpoint-up(lg) {
+    padding: 3.5rem 0;
+  }
 }
 
 .navbar-title {
