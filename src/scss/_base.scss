@@ -60,12 +60,16 @@ h1, .h1 {
 
 
 .card {
+  &--prices {
+    p {margin-bottom: 1.5rem;}
+  }
   &__header {
     position: relative;
     z-index: 2;
     width: 85%;
     margin: 0 auto -3rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    font-size: 1.35rem;
     border-radius: $border-radius;
     color: $white;
 
@@ -177,4 +181,13 @@ h1, .h1 {
   p, ul {
     margin-bottom: 4rem;
   }
+}
+
+
+
+
+.prices-table {
+  width: 100%;
+  td:first-child {text-align: left;}
+  td:last-child {text-align: right;}
 }
