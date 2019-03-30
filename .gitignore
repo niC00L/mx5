@@ -1,6 +1,6 @@
 node_modules
 bower_components
 .idea
-!docs/img
-docs
-docs/*
+docs/css
+docs/js
+docs/*.html
