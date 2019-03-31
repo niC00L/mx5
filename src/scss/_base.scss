@@ -125,14 +125,39 @@ h1, .h1 {
   }
 }
 
+
 .specs-list {
   flex-direction: column;
+
+  @include media-breakpoint-between(lg, xl) {
+    flex-direction: row;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: row;
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem;
+    margin-left: 2rem;
+  }
 
 }
 
 .spec {
   position: relative;
   text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+    .spec__value, .spec__units {
+      font-size: 2.5rem;
+      margin-top: -3.25rem;
+      margin-bottom: -.75rem;
+    }
+  }
 
   &__value {
     font-size: 3.5rem;
@@ -242,23 +267,62 @@ h1, .h1 {
 
 
 .homepage--about {
-  padding: 5rem;
+  padding: 5rem 0;
   margin-bottom: 3rem;
 }
 
 
 .homepage--about-car {
   position: relative;
-  padding: 10rem 0;
-  margin-bottom: 4rem;
-}
+  padding: 7rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 10rem 0;
+  }
 
-.about-mazda-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  z-index: -1;
+  margin-bottom: 4rem;
+
+  .about-text {
+    text-align: center;
+    margin: auto;
+    @include media-breakpoint-up(lg) {
+      margin: 0 2rem 0;
+      text-align: left;
+    }
+  }
+
+  .about-mazda-img {
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+    height: 32rem;
+    z-index: -1;
+
+    @include media-breakpoint-up(lg) {
+        bottom: 0;
+        top: auto;
+        height: 90%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  @include media-breakpoint-up(xl) {
+
+    .about-mazda-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
 }
 
 

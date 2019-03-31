@@ -90,11 +90,11 @@
         </div>
         <div class="row justify-content-center">
             <!--<div class=" col-3">-->
-                <!--<a href="#contact" class="btn btn-primary d-block">-->
-                    <!--Vice informaci-->
-                <!--</a>-->
+            <!--<a href="#contact" class="btn btn-primary d-block">-->
+            <!--Vice informaci-->
+            <!--</a>-->
             <!--</div>-->
-            <div class=" col-3">
+            <div class=" col-auto col-lg-3">
                 <a href="prices.html" class="btn btn-primary d-block">
                     Cenik
                 </a>
@@ -105,8 +105,9 @@
 <section class="homepage--about-car">
     <div class="container">
         <div class="row">
-            <div class="col-6 mr-5">
-                <h2 class="heading-underline heading-underline--left">O autě</h2>
+            <div class="col-md-10 col-lg-6 about-text">
+                <h2 class="heading-underline heading-underline--left d-none d-lg-block">O autě</h2>
+                <h2 class="heading-underline heading-underline--center d-lg-none">O autě</h2>
                 <p>
                     Naše Mazda MX5 je limitovaná verze Sportive, prošla faceliftem a na rozdíl od seriové MX5 je
                     posazena na Bilstein podvozku, má samosvor Torsen a 6ti stupňovou převodovku. Výlet Vám mohou
@@ -114,10 +115,10 @@
                     super....
                 </p>
                 <!--<a href="#contact" class="btn btn-primary">-->
-                    <!--Zamluvte si jízdu-->
+                <!--Zamluvte si jízdu-->
                 <!--</a>-->
             </div>
-            <div class="col-auto">
+            <div class="col-md-4 col-lg-7 col-xl-auto">
                 <div class="row specs-list">
                     <div class="col spec spec--power">
                         <div class="spec__value d-inline-block">146</div>
@@ -138,7 +139,9 @@
             </div>
         </div>
     </div>
-    <img src="img/about-mazda.jpg" alt="about Mazda" class="about-mazda-img"/>
+    <div class="text-right">
+        <img src="img/about-mazda.jpg" alt="about Mazda" class="about-mazda-img"/>
+    </div>
 </section>
 
 @@include('components/footer.html')

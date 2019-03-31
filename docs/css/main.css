@@ -6258,9 +6258,41 @@ h1, .h1 {
   flex-direction: column;
 }
 
+@media (min-width: 992px) {
+  .specs-list {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .specs-list {
+    flex-direction: row;
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .specs-list {
+    padding-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+
 .spec {
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .spec {
+    padding: 0;
+  }
+  .spec .spec__value, .spec .spec__units {
+    font-size: 2.5rem;
+    margin-top: -3.25rem;
+    margin-bottom: -.75rem;
+  }
 }
 
 .spec__value {
@@ -6361,22 +6393,67 @@ h1, .h1 {
 }
 
 .homepage--about {
-  padding: 5rem;
+  padding: 5rem 0;
   margin-bottom: 3rem;
 }
 
 .homepage--about-car {
   position: relative;
-  padding: 10rem 0;
+  padding: 7rem 0;
   margin-bottom: 4rem;
 }
 
-.about-mazda-img {
+@media (min-width: 992px) {
+  .homepage--about-car {
+    padding: 10rem 0;
+  }
+}
+
+.homepage--about-car .about-text {
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .homepage--about-car .about-text {
+    margin: 0 2rem 0;
+    text-align: left;
+  }
+}
+
+.homepage--about-car .about-mazda-img {
   position: absolute;
-  top: 0;
+  bottom: -1.5rem;
   right: 0;
-  height: 100%;
+  height: 32rem;
   z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .homepage--about-car .about-mazda-img {
+    bottom: 0;
+    top: auto;
+    height: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .homepage--about-car .about-mazda-img {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage--about-car .about-mazda-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 .card-list {
