@@ -28,7 +28,8 @@
     </div>
 </div>
 <div class="container content">
-    <section class="homepage--about row justify-content-center mb-5 pb-5">
+    <section class="homepage--about row justify-content-center ">
+        <img src="img/header-main.jpg" alt="header-image" class="header__image"/>
         <div class="text-center col-6">
             <h2 class="heading-underline heading-underline--center">Co nabízime</h2>
             <p>
@@ -44,7 +45,7 @@
             <div class="col-4">
                 <div class="card text-center">
                     <div class="card__header card__header--green">
-                        <i class="material-icons">person</i>
+                        <img class="card__icon" src="img/trips.svg" alt="trips">
                     </div>
                     <div class="card__body">
                         <h3 class="card__title">
@@ -59,7 +60,7 @@
             <div class="col-4">
                 <div class="card text-center">
                     <div class="card__header card__header--red">
-                        <i class="material-icons">person</i>
+                        <img class="card__icon" src="img/instructor.svg" alt="trips">
                     </div>
                     <div class="card__body">
                         <h3 class="card__title">
@@ -74,7 +75,7 @@
             <div class="col-4">
                 <div class="card text-center">
                     <div class="card__header card__header--purple">
-                        <i class="material-icons">person</i>
+                        <img class="card__icon" src="img/wedding.svg" alt="trips">
                     </div>
                     <div class="card__body">
                         <h3 class="card__title">
@@ -88,13 +89,13 @@
             </div>
         </div>
         <div class="row justify-content-center">
+            <!--<div class=" col-3">-->
+                <!--<a href="#contact" class="btn btn-primary d-block">-->
+                    <!--Vice informaci-->
+                <!--</a>-->
+            <!--</div>-->
             <div class=" col-3">
-                <a href="#contact" class="btn btn-primary d-block">
-                    Vice informaci
-                </a>
-            </div>
-            <div class=" col-3">
-                <a href="#contact" class="btn btn-primary d-block">
+                <a href="prices.html" class="btn btn-primary d-block">
                     Cenik
                 </a>
             </div>
@@ -104,7 +105,7 @@
 <section class="homepage--about-car">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 mr-5">
                 <h2 class="heading-underline heading-underline--left">O autě</h2>
                 <p>
                     Naše Mazda MX5 je limitovaná verze Sportive, prošla faceliftem a na rozdíl od seriové MX5 je
@@ -112,9 +113,9 @@
                     zpříjemnit vyhřívaná sedadla, el.stahování oken, nebo klimatizace. Díky své nízké hmotnosti je
                     super....
                 </p>
-                <a href="#contact" class="btn btn-primary">
-                    Zamluvte si jízdu
-                </a>
+                <!--<a href="#contact" class="btn btn-primary">-->
+                    <!--Zamluvte si jízdu-->
+                <!--</a>-->
             </div>
             <div class="col-auto">
                 <div class="row specs-list">
@@ -137,7 +138,7 @@
             </div>
         </div>
     </div>
-    </div>
+    <img src="img/about-mazda.jpg" alt="about Mazda" class="about-mazda-img"/>
 </section>
 
 @@include('components/footer.html')

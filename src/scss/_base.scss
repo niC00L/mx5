@@ -2,6 +2,7 @@ body {
   font-family: $font-family-base;
   background-color: $body-bg-color;
   color: $dark;
+  padding-top: 8.5rem;
 }
 
 .link-normal {
@@ -47,22 +48,39 @@ h1, .h1 {
 }
 
 .header {
-  padding: 3rem 0 5rem ;
+  padding: 3rem 0 6rem;
+  margin-bottom: 4rem;
+
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 75%;
+    z-index: -1;
+  }
+
   &__title {
     margin-bottom: 1rem;
   }
+
   &__description {
     font-size: 1.25rem;
   }
 }
 
 
-
-
 .card {
   &--prices {
-    p {margin-bottom: 1.5rem;}
+    p {
+      margin-bottom: 1.5rem;
+    }
   }
+
+  &__icon {
+    max-width: 6rem;
+  }
+
   &__header {
     position: relative;
     z-index: 2;
@@ -139,8 +157,20 @@ h1, .h1 {
 }
 
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .contact {
   padding-top: 18rem;
+
+  background-image: url("../img/shape-contact.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
 
   &__heading {
     margin-bottom: 4rem;
@@ -164,6 +194,18 @@ h1, .h1 {
     a {
       color: $gray-600;
       padding: 0 1rem;
+      display: inline-block;
+      opacity: .2;
+
+      &:hover {
+        opacity: .4
+      }
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+      }
     }
   }
 }
@@ -184,10 +226,35 @@ h1, .h1 {
 }
 
 
-
-
 .prices-table {
   width: 100%;
-  td:first-child {text-align: left;}
-  td:last-child {text-align: right;}
+
+  td:first-child {
+    text-align: left;
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+}
+
+
+.homepage--about {
+  padding: 5rem;
+  margin-bottom: 3rem;
+}
+
+
+.homepage--about-car {
+  position: relative;
+  padding: 10rem 0;
+  margin-bottom: 4rem;
+}
+
+.about-mazda-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
 }
