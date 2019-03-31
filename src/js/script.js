@@ -11,11 +11,16 @@ navbarNav.addEventListener('hide.bs.collapse', function (event) {
 }, false);
 
 
-window.onscroll = function changeClass() {
+function menubg() {
     var scrollPosY = window.pageYOffset | document.body.scrollTop;
     if (scrollPosY > 10) {
         mainNav.classList.add('background');
     } else if (scrollPosY <= 10) {
         mainNav.classList.remove('background');
     }
+}
+
+menubg();
+window.onscroll = function changeClass() {
+    menubg();
 };

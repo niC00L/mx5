@@ -6174,8 +6174,13 @@ h1, .h1 {
 }
 
 .header {
-  padding: 3rem 0 6rem;
   margin-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 3rem 0 6rem;
+  }
 }
 
 .header__image {
@@ -6296,7 +6301,7 @@ h1, .h1 {
 
 .contact__heading {
   margin-bottom: 4rem;
-  font-size: 3.75rem;
+  font-size: 3rem;
 }
 
 .contact__info {
@@ -6305,7 +6310,7 @@ h1, .h1 {
 
 .contact__info a {
   display: block;
-  font-size: 2.125rem;
+  font-size: 1.75rem;
   font-weight: bold;
   line-height: 2em;
 }
@@ -6318,11 +6323,11 @@ h1, .h1 {
   color: #6c757d;
   padding: 0 1rem;
   display: inline-block;
-  opacity: .2;
+  opacity: .35;
 }
 
 .contact__social a:hover {
-  opacity: .4;
+  opacity: .5;
 }
 
 .contact__social a img {
@@ -6374,9 +6379,27 @@ h1, .h1 {
   z-index: -1;
 }
 
+.card-list {
+  justify-content: center;
+}
+
+.card-list .card {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .card-list {
+    justify-content: space-between;
+  }
+  .card-list .card {
+    margin-bottom: 0;
+  }
+}
+
 #mainNav {
   background-color: transparent;
   transition: .25s;
+  padding: 3.5rem 0;
 }
 
 #mainNav .navbar-brand {
@@ -6486,12 +6509,6 @@ h1, .h1 {
 
 #mainNav .navbar-toggler {
   border: none;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    padding: 3.5rem 0;
-  }
 }
 
 .navbar-title, .navbar-title a {

@@ -48,7 +48,9 @@ h1, .h1 {
 }
 
 .header {
-  padding: 3rem 0 6rem;
+  @include media-breakpoint-up(lg) {
+    padding: 3rem 0 6rem;
+  }
   margin-bottom: 4rem;
 
 
@@ -174,7 +176,7 @@ h1, .h1 {
 
   &__heading {
     margin-bottom: 4rem;
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
 
   &__info {
@@ -182,7 +184,7 @@ h1, .h1 {
 
     a {
       display: block;
-      font-size: 2.125rem;
+      font-size: 1.75rem;
       font-weight: bold;
       line-height: 2em;
     }
@@ -195,10 +197,10 @@ h1, .h1 {
       color: $gray-600;
       padding: 0 1rem;
       display: inline-block;
-      opacity: .2;
+      opacity: .35;
 
       &:hover {
-        opacity: .4
+        opacity: .5
       }
 
       img {
@@ -257,4 +259,21 @@ h1, .h1 {
   right: 0;
   height: 100%;
   z-index: -1;
+}
+
+
+.card-list {
+  justify-content: center;
+
+  .card {
+    margin-bottom: 3rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between;
+
+    .card {
+      margin-bottom: 0;
+    }
+  }
 }
