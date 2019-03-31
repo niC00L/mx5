@@ -62,7 +62,40 @@ h1, .h1 {
     }
     @include media-breakpoint-up(lg) {
       margin-top: 0;
+
+      padding: 10vh 0 15vh;
+    }
+    @include media-breakpoint-up(xl) {
       padding: 20vh 0 30vh;
+    }
+
+
+    .header__image {
+      position: relative;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: 90%;
+      }
+
+
+      @include media-breakpoint-up(lg) {
+        width: 70%;
+        top: 45%;
+        transform: translateY(-50%);
+      }
+
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-height: 90%;
+        z-index: -1;
+        transform: translateY(0);
+      }
+
     }
   }
 
@@ -74,27 +107,15 @@ h1, .h1 {
   }
 
   &__image {
-    position: relative;
-    bottom: 0;
-    height: auto;
-    width: 100%;
 
-    @include media-breakpoint-up(md) {
-      width: 90%;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    z-index: -1;
+    @include media-breakpoint-up(xl) {
 
-    @include media-breakpoint-up(lg) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      max-height: 90%;
-      z-index: -1;
-    }
-
-    @include media-breakpoint-up(lg) {
       width: 70%;
-      top: 45%;
-      transform: translateY(-50%);
     }
   }
 
