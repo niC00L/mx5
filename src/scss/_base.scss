@@ -53,13 +53,49 @@ h1, .h1 {
   }
   margin-bottom: 4rem;
 
+  &--main {
+    //padding: 5vh 0 8vh;
+    margin-top: -4rem;
+    @include media-breakpoint-up(md) {
+      margin-top: -8rem;
+
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+      padding: 20vh 0 30vh;
+    }
+  }
+
+  &__text {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      padding-top: 4rem;
+    }
+  }
 
   &__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 75%;
-    z-index: -1;
+    position: relative;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 90%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-height: 90%;
+      z-index: -1;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+      top: 45%;
+      transform: translateY(-50%);
+    }
   }
 
   &__title {
@@ -129,7 +165,7 @@ h1, .h1 {
 .specs-list {
   flex-direction: column;
 
-  @include media-breakpoint-between(lg, xl) {
+  @include media-breakpoint-between(lg, lg) {
     flex-direction: row;
   }
 
@@ -298,9 +334,9 @@ h1, .h1 {
     z-index: -1;
 
     @include media-breakpoint-up(lg) {
-        bottom: 0;
-        top: auto;
-        height: 90%;
+      bottom: 0;
+      top: auto;
+      height: 90%;
     }
 
     @include media-breakpoint-down(sm) {
