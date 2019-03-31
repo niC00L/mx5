@@ -1,7 +1,7 @@
 // Styling for the navbar
 #mainNav {
   //@include sans-serif-font;
-  background-color: $body-bg-color;
+  background-color: transparent;
   transition: .25s;
 
   .navbar-brand {position: relative;}
@@ -33,16 +33,23 @@
     .navbar-title {opacity: 0;}
   }
 
+  &.background:not(.open) {
+    padding: 2rem 0;
+    background-color: $body-bg-color;
+    box-shadow: 0 0.5rem 3rem 0 rgba(0,0,0,.05);
+  }
+
   .navbar-nav {
     padding-left: 3rem;
     padding-right: 3rem;
     height: calc(100vh - 2rem - 38px);
     justify-content: center;
+
     @include media-breakpoint-up(lg) {
       height: calc(100vh - 7rem - 24px);
       text-align: right;
       justify-content: flex-end;
-      padding-bottom: 6.5rem;
+      padding-bottom: 14.5rem;
     }
     @include media-breakpoint-up(xl) {
       padding-left: 16.25rem;
