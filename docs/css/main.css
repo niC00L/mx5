@@ -6401,7 +6401,7 @@ h1, .h1 {
 
 .contact__heading {
   margin-bottom: 4rem;
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 .contact__info {
@@ -6410,7 +6410,7 @@ h1, .h1 {
 
 .contact__info a {
   display: block;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 2em;
 }
@@ -6559,8 +6559,20 @@ h1, .h1 {
   height: 200%;
 }
 
+#mainNav .logo--white {
+  opacity: 0;
+}
+
 #mainNav.open {
   background-color: #eb443a;
+}
+
+#mainNav.open .logo--black {
+  opacity: 0;
+}
+
+#mainNav.open .logo--white {
+  opacity: 1;
 }
 
 #mainNav.open .navbar-toggler {

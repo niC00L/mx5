@@ -4,7 +4,9 @@
   background-color: transparent;
   transition: .25s;
 
-  .navbar-brand {position: relative;}
+  .navbar-brand {
+    position: relative;
+  }
 
   .logo {
     position: absolute;
@@ -14,29 +16,54 @@
     height: 200%;
   }
 
+  .logo--white {
+    opacity: 0;
+  }
+
   &.open {
     background-color: $primary;
     //@include gradient-red();
+    .logo--black {
+      opacity: 0;
+    }
+
+    //@include media-breakpoint-up(lg) {
+      .logo--white {
+        opacity: 1;
+      }
+    //}
 
     .navbar-toggler {
       color: $white;
+
       .line {
         position: absolute;
         top: .5em;
         left: .25em;
-        &:first-child {transform: rotate(45deg);}
-        &:nth-child(2) {display: none;}
-        &:last-child {transform: rotate(-45deg);}
+
+        &:first-child {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+        }
       }
     }
 
-    .navbar-title {opacity: 0;}
+    .navbar-title {
+      opacity: 0;
+    }
   }
 
   &.background:not(.open) {
     padding: 2rem 0;
     background-color: $body-bg-color;
-    box-shadow: 0 0.5rem 3rem 0 rgba(0,0,0,.05);
+    box-shadow: 0 0.5rem 3rem 0 rgba(0, 0, 0, .05);
   }
 
   .navbar-nav {
@@ -65,12 +92,15 @@
         line-height: 1.88;
         padding-top: 0;
         padding-bottom: 0;
+
         &:hover {
           color: $dark;
         }
+
         &.active {
           color: $dark !important;
           background-color: transparent;
+
           &:hover {
             background-color: transparent;
           }
@@ -83,11 +113,13 @@
       }
     }
   }
+
   .navbar-toggler {
     border: none;
     //color: $black;
   }
-    padding: 3.5rem 0;
+
+  padding: 3.5rem 0;
   @include media-breakpoint-up(lg) {
   }
 }
@@ -96,7 +128,7 @@
   &, & a {
     //color: $gray-dark;
     font-weight: 600;
-    font-size: .875rem;    
+    font-size: .875rem;
     text-transform: uppercase;
     text-decoration: none;
     //@include media-breakpoint-down(md) {
